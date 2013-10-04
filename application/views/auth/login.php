@@ -27,4 +27,7 @@
 
 <p><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
 
-<p><button onclick="window.location.href='<?php echo base_url(); ?>create_user'">Continue</button></p>
+
+<?php echo form_open('auth/create_user'); ?>
+  <input type="submit" value="Register">
+<?php echo form_close(); ?>
