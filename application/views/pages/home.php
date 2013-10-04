@@ -54,9 +54,8 @@
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link">Username</a>
-              <button class="btn btn-small btn-danger">Sign Out</button>
+              <button onclick="location.href='auth/logout'" class="btn btn-small btn-danger">Sign Out</button>            
             </p>
-
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>

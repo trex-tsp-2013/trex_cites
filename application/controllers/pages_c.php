@@ -12,13 +12,13 @@ class Pages_C extends CI_Controller{
 	public function index()
 	{
 
-		// if ($this->ion_auth->logged_in())
-		// {
+		if ($this->ion_auth->logged_in())
+		{
 			//redirect them to the login page
 			$this->load->view('pages/home');
-		// } else{
-		// 	redirect('auth', 'refresh');
-		// }
+		} else{
+		 	redirect('auth', 'refresh');
+		}
 
 		
 	}
