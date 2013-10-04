@@ -45,6 +45,8 @@ $route['pages/login'] = 'pages/login';*/
 
 $route['default_controller'] = 'auth';
 $route['auth/create_user'] = 'auth/create_user';
+$route['pages'] = 'pages_c';
+
 
 //$route['default_controller'] = "welcome";
 //$route['404_override'] = '';
