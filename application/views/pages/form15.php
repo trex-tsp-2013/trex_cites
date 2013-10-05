@@ -54,10 +54,11 @@
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link">Username</a>
-              <button onclick="location.href='auth/logout'" class="btn btn-small btn-danger">Sign Out</button>            
+              <button onclick="location.href='../auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
             </p>
+
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -72,7 +73,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form & Request</h2></li>
-              <li><a href="pages/form15">การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</a></li>
+              <li class="active"><a href="#">การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</a></li>
               <br>
               <li><a href="#">การยื่นคำขอต่างๆ ที่เกี่ยวข้องกับใบสำคัญการขึ้นทะเบียนสถานที่เพาะเลี้ยง และ บัญชีพืชอนุรักษ์</a></li>
               <br>
@@ -94,46 +95,68 @@
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
-          <div class="hero-unit">
-            <h1>Hello, Username!</h1><br>
-            <p>Welcome to the CITES online document approval</p>
-            <p>ยินดีต้อนรับเข้าสู่ การลงทะเบียน CITES ออนไลน์</p>
-            <p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p>
+          <div class="well">
+            <h2>คำขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</h2><br><br>
+            <form action="" method="post">
+            <b>ข้าพเจ้า: </b><input class="input-xlarge" type="text" name="fname"><br>
+            <b>วันเดือนปีเกิด: </b><input type="text" name="fbd"><br>
+            <b>สัญชาติ: </b><input type="text" name="fnation"><br>
+            <b>บัตรประจำตัวประชาชน / ใบสำคัญประจำตัวคนต่างด้าว เลขที่: </b><input class="input-xlarge" type="text" name="fpassport"><br>
+            <b>ออกให้ ณ: </b><input type="text" name="fissue"><br>
+            <b>ที่อยู่: </b><input class="input-xxlarge" type="text" name="faddress"><br>
+            <b>ถนน: </b><input type="text" name="fstreet"><br>
+            <b>จังหวัด: </b><input type="text" name="fprovince"><br>
+            <b>รหัสไปรษณีย์: </b><input type="text" name="fzipcode"><br>
+            <b>โทรศัพท์: </b><input type="text" name="ftel"><br>
+            <b>โทรศัพท์เคลื่อนที่: </b><input type="text" name="fphone"><br>
+            <b>โทรสาร: </b><input type="text" name="ffax"><br>
+            <b>อีเลคทรอนิคเมล์ Email: </b><input class="input-xlarge" type="text" name="fmail">
+            <br><br>
+            <b>มีความประสงค์จะขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</b>
+            <br>
+            <br>
+            <b>ในนามของ(กรณีเป็นนิติบุคคล): </b><input type="text" name="fname2"><br>
+            <b>โดยมี: </b><input type="text" name="ffax"> เป็นผู้ดำเนินกิจการ<br>
+            <b>ที่อยู่: </b><input class="input-xxlarge" type="text" name="faddress2"><br>
+            <b>ถนน: </b><input type="text" name="fstreet2"><br>
+            <b>จังหวัด: </b><input type="text" name="fprovince2"><br>
+            <b>รหัสไปรษณีย์: </b><input type="text" name="fzipcode2"><br>
+            <b>โทรศัพท์: </b><input type="text" name="ftel2"><br>
+            <b>โทรศัพท์เคลื่อนที่: </b><input type="text" name="fphone2">
+            <b>โทรสาร: </b><input type="text" name="ffax2"><br>
+            <br>
+            <b>สถานที่เพาะเลี้ยงอนุรักษ์ ชื่อ: </b><input class="input-xlarge" type="text" name="fname3"><br>
+            <b>ที่อยู่: </b><input class="input-xxlarge" type="text" Name="faddress3"><br>
+            <b>ถนน: </b><input type="text" name="fstreet3"><br>
+            <b>จังหวัด: </b><input type="text" name="fprovince3"><br>
+            <b>รหัสไปรษณีย์: </b><input type="text" name="fzipcode3"><br>
+            <br>
+            <b>โทรศัพท์: </b><input type="text" name="ftel3"><br>
+            <b>โทรศัพท์เคลื่อนที่: </b><input type="text" name="fphone3"><br>
+            <b>โทรสาร: </b><input type="text" name="ffax3"><br>
+            <br>
+            <br>
+            <b>ชื่อพืช: </b><input class="input-xlarge" type="text" name="plantname"><br>
+            <b>ชื่อวิทยาศาสตร์: </b><input class="input-xlarge" type="text" name="sname"><br>
+            <b>จำนวน พ่อ-แม่ พันธุ์: </b><input type="text" name="numberbreed"><br>
+            <b>จำนวนเพื่อการค้า: </b><input type="text" name="numbercom"><br>
+            <b>แหล่งที่มา(ที่ถูกต้องตามกฎหมาย): </b><input type="text" name="source"><br>
+            <b>วิธีการขยายพันธุ์เทียม: </b><input type="text" name="ab">
+            <br>
+            <br>
+            <br>
+            <b>รูปภาพสถานประกอบการ: </b> <input type="file" name="file" id="file"><br>
+            <b>รูปภาพพันธุ์พืชอนุรักษ์: </b> <input type="file" name="file2" id="file">
+            <br>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-large btn-primary">Submit</button>
+            <button type="cancel" class="btn btn-large">Cancel</button>
+            </form>
           </div>
-          <div class="row-fluid">
-            <div class="span4">
-              <h4>การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำวนพืชอนุรักษ์</h4><br>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h4>การยื่นคำขอต่างๆ ที่เกี่ยวข้องกับใบสำคัญการขึ้นทะเบียนสถานที่เพาะเลี้ยง และ บัญชีพืชอนุรักษ์</h4>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h4>การขออนุญาตนำเข้า และนำเข้าล่วงหน้าพืชอนุรักษ์และซากพืชของพืชอนุรักษ์
-              ตามวงศ์และชนิดที่ระบุในบัญชี</h4>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-            <div class="span4">
-              <h4>การขอใบอนุญาตส่งออก และส่งออกล่วงหน้าพืชอนุรักษ์หรือซากพืชอนุรักษ์</h4>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h4>การขออนุญาตนำผ่านพืชอนุรักษ์</h4>
-              <br>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h4>การออกหนังสือรับรองการส่งออกพืชลูกผสม</h4>
-              <br>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-        </div><!--/span-->
+          
       </div><!--/row-->
-
+    </div>
       <hr>
 
       <footer>

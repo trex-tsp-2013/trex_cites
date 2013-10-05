@@ -23,6 +23,20 @@ class Pages_C extends CI_Controller{
 		
 	}
 
+	public function form15()
+	{
+
+		if ($this->ion_auth->logged_in())
+		{
+			//redirect them to the login page
+			$this->load->view('pages/form15');
+		} else{
+		 	redirect('auth', 'refresh');
+		}
+
+		
+	}
+
 
 
 	

@@ -47,6 +47,7 @@ $route['default_controller'] = 'auth';
 $route['auth/create_user'] = 'auth/create_user';
 $route['pages'] = 'pages_c';
 $route['auth/logout'] = 'auth/logout';
+$route['pages/form15'] ='pages_c/form15';
 
 
 
