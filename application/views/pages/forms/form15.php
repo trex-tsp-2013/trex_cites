@@ -50,7 +50,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="..">TREX Corp.</a>
+          <a class="brand" href="#">TREX Corp.</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link">Username</a>
@@ -58,7 +58,7 @@
             </p>
 
             <ul class="nav">
-              <li><a href="..">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -97,7 +97,9 @@
         <div class="span9">
           <div class="well">
             <h2>คำขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</h2><br><br>
-            <form action="" method="post">
+            
+            <?php echo form_open("pages/preview15");?>
+
             <b>ข้าพเจ้า: </b><input class="input-xlarge" type="text" name="fname"><br>
             <b>วันเดือนปีเกิด: </b><input type="text" name="fbd"><br>
             <b>สัญชาติ: </b><input type="text" name="fnation"><br>
@@ -116,7 +118,7 @@
             <br>
             <br>
             <b>ในนามของ(กรณีเป็นนิติบุคคล): </b><input type="text" name="fname2"><br>
-            <b>โดยมี: </b><input type="text" name="ffax"> เป็นผู้ดำเนินกิจการ<br>
+            <b>โดยมี: </b><input type="text" name="fowner"> เป็นผู้ดำเนินกิจการ<br>
             <b>ที่อยู่: </b><input class="input-xxlarge" type="text" name="faddress2"><br>
             <b>ถนน: </b><input type="text" name="fstreet2"><br>
             <b>จังหวัด: </b><input type="text" name="fprovince2"><br>
@@ -125,7 +127,7 @@
             <b>โทรศัพท์เคลื่อนที่: </b><input type="text" name="fphone2">
             <b>โทรสาร: </b><input type="text" name="ffax2"><br>
             <br>
-            <b>สถานที่เพาะเลี้ยงอนุรักษ์ ชื่อ: </b><input class="input-xlarge" type="text" name="fname3"><br>
+            <b>สถานที่เพาะเลี้ยงอนุรักษ์ ชื่อ: </b><input class="input-xlarge" type="text" name="flocation"><br>
             <b>ที่อยู่: </b><input class="input-xxlarge" type="text" Name="faddress3"><br>
             <b>ถนน: </b><input type="text" name="fstreet3"><br>
             <b>จังหวัด: </b><input type="text" name="fprovince3"><br>
@@ -152,7 +154,7 @@
             <br>
             <button type="submit" class="btn btn-large btn-primary">Submit</button>
             <button type="cancel" class="btn btn-large">Cancel</button>
-            </form>
+            <?php echo form_close(); ?>
           </div>
           
       </div><!--/row-->
