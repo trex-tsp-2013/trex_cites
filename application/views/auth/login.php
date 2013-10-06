@@ -78,11 +78,15 @@
           
             <p>Remember Me: <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?></p>
 
-            <button class="btn btn-primary" type="submit">Login</button>
+            
+            <button class="btn btn-primary" type="submit" style="height:30px; width:95px" > Login </button>
+            <?php echo form_close(); ?>
 
             <?php echo form_open('auth/create_user'); ?>
-              <button class="btn" type="submit">Register</button>
+              <button class="btn" type="submit" style="height:30px; width:95px">Register</button>
             <?php echo form_close(); ?>
+
+            
 
             <p><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
             
