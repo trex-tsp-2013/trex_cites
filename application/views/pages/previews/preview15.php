@@ -53,7 +53,7 @@
           <a class="brand" href="../auth">TREX Corp.</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">Username</a>
+              Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
               <button onclick="location.href='../auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
             </p>
 

@@ -13,8 +13,11 @@ class Pages_C extends CI_Controller{
 
 		if ($this->ion_auth->logged_in())
 		{
-			//redirect them to the login page
-			$this->load->view('pages/home');
+			$user = $this->ion_auth->user()->row();
+			//save username to be data
+			$data['username'] = $user->username;
+			//open home page
+			$this->load->view('pages/home',$data);
 		} else{
 		 	redirect('auth', 'refresh');
 		}
@@ -27,8 +30,11 @@ class Pages_C extends CI_Controller{
 
 		if ($this->ion_auth->logged_in())
 		{
+			$user = $this->ion_auth->user()->row();
+			//save username to be data
+			$data['username'] = $user->username;
 			//open form15
-			$this->load->view('pages/forms/form15');
+			$this->load->view('pages/forms/form15',$data);
 		} else{
 			//redirect them to the login page
 		 	redirect('auth', 'refresh');
@@ -41,8 +47,11 @@ class Pages_C extends CI_Controller{
 
 		if ($this->ion_auth->logged_in())
 		{
+			$user = $this->ion_auth->user()->row();
+			//save username to be data
+			$data['username'] = $user->username;
 			//open preview form15
-			$this->load->view('pages/previews/preview15');
+			$this->load->view('pages/previews/preview15',$data);
 		} else{
 			//redirect them to the login page
 		 	redirect('auth', 'refresh');
@@ -54,8 +63,12 @@ class Pages_C extends CI_Controller{
 
 		if ($this->ion_auth->logged_in())
 		{
+			//load user
+			$user = $this->ion_auth->user()->row();
 			
 			$data15 = array(
+				//add userId form user
+				'userId' => $user->id,
 				'fname' => $this->input->post('fname'),
 				'fbd' => $this->input->post('fbd'),
 				'fnation' => $this->input->post('fnation'),

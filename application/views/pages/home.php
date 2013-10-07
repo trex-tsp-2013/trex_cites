@@ -53,7 +53,7 @@
           <a class="brand" href="#">TREX Corp.</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">Username</a>
+              Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
               <button onclick="location.href='auth/logout'" class="btn btn-small btn-danger">Sign Out</button>            
             </p>
             <ul class="nav">
@@ -95,7 +95,7 @@
         </div><!--/span-->
         <div class="span9">
           <div class="hero-unit">
-            <h1>Hello, Username!</h1><br>
+            <h1>Hello, <?echo $username;?>!</h1><br>
             <p>Welcome to the CITES online document approval</p>
             <p>ยินดีต้อนรับเข้าสู่ การลงทะเบียน CITES ออนไลน์</p>
             <p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p>
