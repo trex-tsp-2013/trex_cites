@@ -50,7 +50,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">TREX Corp.</a>
+          <a class="brand" href="../auth">TREX Corp.</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link">Username</a>
@@ -58,7 +58,7 @@
             </p>
 
             <ul class="nav">
-              <li><a href="#">Home</a></li>
+              <li><a href="../auth">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -98,7 +98,7 @@
           <div class="well">
             <h2>คำขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</h2><br>
             
-            <?php echo form_open("");?>
+            <?php echo form_open("pages/save15");?>
             <div style="color:red"><h1>โปรดตรวจสอบความถูกต้องอีกครั้ง</h1></div>
            
             <b>ข้าพเจ้า: </b><span style="color:red"><?echo $_POST["fname"];?></span>

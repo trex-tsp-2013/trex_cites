@@ -5,8 +5,7 @@ class Pages_C extends CI_Controller{
 	public function __construct()  // load the model
 	{
 		parent::__construct();
-		$this->load->model('login_model');
-		
+		$this->load->model('form_model');
 	}
 
 	public function index()
@@ -55,6 +54,7 @@ class Pages_C extends CI_Controller{
 
 		if ($this->ion_auth->logged_in())
 		{
+			
 			$data15 = array(
 				'fname' => $this->input->post('fname'),
 				'fbd' => $this->input->post('fbd'),
@@ -73,7 +73,7 @@ class Pages_C extends CI_Controller{
 				'fowner' => $this->input->post('fowner'),
 				'faddress2' => $this->input->post('faddress2'),
 				'fstreet2' => $this->input->post('fstreet2'),
-				'fprovince' => $this->input->post('fprovince'),
+				'fprovince2' => $this->input->post('fprovince2'),
 				'fzipcode2' => $this->input->post('fzipcode2'),
 				'ftel2' => $this->input->post('ftel2'),
 				'fphone2' => $this->input->post('ffax2'),
@@ -94,8 +94,19 @@ class Pages_C extends CI_Controller{
 				'source' => $this->input->post('source'),
 				'ab' => $this->input->post('ab'),
 				);
-			//open preview form15
-			$this->load->view('pages/previews/preview15');
+
+
+
+				if($this->form_model->save_form15($data15))
+				{
+					redirect('auth', 'refresh');
+				}else{
+					show_404();
+				}
+
+
+			// //open preview form15
+			// $this->load->view('pages/previews/preview15');
 		} else{
 			//redirect them to the login page
 		 	redirect('auth', 'refresh');

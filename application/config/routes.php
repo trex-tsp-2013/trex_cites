@@ -49,6 +49,7 @@ $route['pages'] = 'pages_c';
 $route['auth/logout'] = 'auth/logout';
 $route['pages/form15'] ='pages_c/form15';
 $route['pages/preview15'] ='pages_c/preview15';
+$route['pages/save15'] = 'pages_c/save15';
 
 
 /* End of file routes.php */

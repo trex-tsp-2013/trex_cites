@@ -50,7 +50,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">TREX Corp.</a>
+          <a class="brand" href="../auth">TREX Corp.</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link">Username</a>
@@ -58,7 +58,7 @@
             </p>
 
             <ul class="nav">
-              <li><a href="#">Home</a></li>
+              <li><a href="../auth">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -101,7 +101,7 @@
             <?php echo form_open("pages/preview15");?>
 
             <b>ข้าพเจ้า: </b><input class="input-xlarge" type="text" name="fname"><br>
-            <b>วันเดือนปีเกิด: </b><input type="text" name="fbd"><br>
+            <b>วันเดือนปีเกิด: </b><input type="text" name="fbd" placeholder="dd/mm/yyyy"><br>
             <b>สัญชาติ: </b><input type="text" name="fnation"><br>
             <b>บัตรประจำตัวประชาชน / ใบสำคัญประจำตัวคนต่างด้าว เลขที่: </b><input class="input-xlarge" type="text" name="fpassport"><br>
             <b>ออกให้ ณ: </b><input type="text" name="fissue"><br>
@@ -124,7 +124,7 @@
             <b>จังหวัด: </b><input type="text" name="fprovince2"><br>
             <b>รหัสไปรษณีย์: </b><input type="text" name="fzipcode2"><br>
             <b>โทรศัพท์: </b><input type="text" name="ftel2"><br>
-            <b>โทรศัพท์เคลื่อนที่: </b><input type="text" name="fphone2">
+            <b>โทรศัพท์เคลื่อนที่: </b><input type="text" name="fphone2"><br>
             <b>โทรสาร: </b><input type="text" name="ffax2"><br>
             <br>
             <b>สถานที่เพาะเลี้ยงอนุรักษ์ ชื่อ: </b><input class="input-xlarge" type="text" name="flocation"><br>
@@ -152,7 +152,7 @@
             <br>
             <br>
             <br>
-            <button type="submit" class="btn btn-large btn-primary">Submit</button>
+            <button type="submit" class="btn btn-large btn-primary" >Submit</button>
             <button type="cancel" class="btn btn-large">Cancel</button>
             <?php echo form_close(); ?>
           </div>
