@@ -45,6 +45,7 @@ class Pages_C extends CI_Controller{
 	public function preview15()
 	{
 
+
 		if ($this->ion_auth->logged_in())
 		{
 			$user = $this->ion_auth->user()->row();
@@ -65,6 +66,9 @@ class Pages_C extends CI_Controller{
 		{
 			//load user
 			$user = $this->ion_auth->user()->row();
+
+
+
 			
 			$data15 = array(
 				//add userId form user

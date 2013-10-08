@@ -100,117 +100,127 @@
             
             <?php echo form_open("pages/save15");?>
             <div style="color:red"><h1>โปรดตรวจสอบความถูกต้องอีกครั้ง</h1></div>
-           
-            <b>ข้าพเจ้า: </b><span style="color:red"><?echo $_POST["fname"];?></span>
-            <input type="hidden" name="fname" value="<?echo $_POST["fname"];?>"><br>
+            <? $fname = $_POST['fname']; ?>
+            <b>ข้าพเจ้า: </b><span style="color:red"><?echo $_POST["fname"];?></span><br>
 
-            <b>วันเดือนปีเกิด: </b><span style="color:red"><?echo $_POST["fbd"];?></span>
-            <input type="hidden" name="fbd" value="<?echo $_POST["fbd"];?>"><br>
+            <? $fbd = $_POST['fbd']; ?>
+            <b>วันเดือนปีเกิด: </b><span style="color:red"><?echo $_POST["fbd"];?></span><br>
 
-            <b>สัญชาติ: </b><span style="color:red"><?echo $_POST["fnation"];?></span>
-            <input type="hidden" name="fnation" value="<?echo $_POST["fnation"];?>"><br>
+            <? $fnation = $_POST['fnation']; ?>
+            <b>สัญชาติ: </b><span style="color:red"><?echo $_POST["fnation"];?></span><br>
 
+            <? $fpassport = $_POST['fpassport']; ?>
             <b>บัตรประจำตัวประชาชน / ใบสำคัญประจำตัวคนต่างด้าว เลขที่: </b>
-            <span style="color:red"><?echo $_POST["fpassport"];?></span>
-            <input type="hidden" name="fpassport" value="<?echo $_POST["fpassport"];?>"><br>
+            <span style="color:red"><?echo $_POST["fpassport"];?></span><br>
 
-            <b>ออกให้ ณ: </b><span style="color:red"><?echo $_POST["fissue"];?></span>
-            <input type="hidden" name="fissue" value="<?echo $_POST["fissue"];?>"><br>
+            <? $fissue = $_POST['fissue']; ?>
+            <b>ออกให้ ณ: </b><span style="color:red"><?echo $_POST["fissue"];?></span><br>
 
-            <b>ที่อยู่: </b><span style="color:red"><?echo $_POST["faddress"];?></span>
-            <input type="hidden" name="faddress" value="<?echo $_POST["faddress"];?>"><br>
+            <? $faddress = $_POST['faddress']; ?>
+            <b>ที่อยู่: </b><span style="color:red"><?echo $_POST["faddress"];?></span><br>
 
-            <b>ถนน: </b><span style="color:red"><?echo $_POST["fstreet"];?></span>
-            <input type="hidden" name="fstreet" value="<?echo $_POST["fstreet"];?>"><br>
+            <? $fstreet = $_POST['fstreet']; ?>
+            <b>ถนน: </b><span style="color:red"><?echo $_POST["fstreet"];?></span><br>
 
-            <b>จังหวัด: </b><span style="color:red"><?echo $_POST["fprovince"];?></span>
-            <input type="hidden" name="fprovince" value="<?echo $_POST["fprovince"];?>"><br>
-            <b>รหัสไปรษณีย์: </b><span style="color:red"><?echo $_POST["fzipcode"];?></span>
-            <input type="hidden" name="fzipcode" value="<?echo $_POST["fzipcode"];?>"><br>
-            <b>โทรศัพท์: </b><span style="color:red"><?echo $_POST["ftel"];?></span>
-            <input type="hidden" name="ftel" value="<?echo $_POST["ftel"];?>"><br>
-            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:red"><?echo $_POST["fphone"];?></span>
-            <input type="hidden" name="fphone" value="<?echo $_POST["fphone"];?>"><br>
-            <b>โทรสาร: </b><span style="color:red"><?echo $_POST["ffax"];?></span>
-            <input type="hidden" name="ffax" value="<?echo $_POST["ffax"];?>"><br>
-            <b>อีเลคทรอนิคเมล์ Email: </b><span style="color:red"><?echo $_POST["fmail"];?></span>
-            <input type="hidden" name="fmail" value="<?echo $_POST["fmail"];?>">
+            <? $fprovince = $_POST['fprovince']; ?>
+            <b>จังหวัด: </b><span style="color:red"><?echo $_POST["fprovince"];?></span><br>
+
+            <? $fzipcode = $_POST['fzipcode']; ?>
+            <b>รหัสไปรษณีย์: </b><span style="color:red"><?echo $_POST["fzipcode"];?></span><br>
+
+            <? $ftel = $_POST['ftel']; ?>
+            <b>โทรศัพท์: </b><span style="color:red"><?echo $_POST["ftel"];?></span><br>
+
+            <? $fphone = $_POST['fphone']; ?>
+            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:red"><?echo $_POST["fphone"];?></span><br>
+
+            <? $ffax = $_POST['ffax']; ?>
+            <b>โทรสาร: </b><span style="color:red"><?echo $_POST["ffax"];?></span><br>
+
+            <? $fmail = $_POST['fmail']; ?>
+            <b>อีเลคทรอนิคเมล์ Email: </b><span style="color:red"><?echo $_POST["fmail"];?></span><br>
+
             <br><br>
             <b>มีความประสงค์จะขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</b>
             <br>
             <br>
-            <b>ในนามของ(กรณีเป็นนิติบุคคล): </b><span style="color:red"><?echo $_POST["fname2"];?></span>
-            <input type="hidden" name="fname2" value="<?echo $_POST["fname2"];?>"><br>
-            
-            <b>โดยมี: </b><span style="color:red"><?echo $_POST["fowner"];?></span>
-            <input type="hidden" name="fowner" value="<?echo $_POST["fowner"];?>"><br>
+            <? $fname2 = $_POST['fname2']; ?>
+            <b>ในนามของ(กรณีเป็นนิติบุคคล): </b><span style="color:red"><?echo $_POST["fname2"];?></span><br>
 
-            <b>ที่อยู่: </b><span style="color:red"><?echo $_POST["faddress2"];?></span>
-            <input type="hidden" name="faddress2" value="<?echo $_POST["faddress2"];?>"><br>
+            <? $fowner = $_POST['fowner']; ?>
+            <b>โดยมี: </b><span style="color:red"><?echo $_POST["fowner"];?></span><br>
 
-            <b>ถนน: </b><span style="color:red"><?echo $_POST["fstreet2"];?></span>
-            <input type="hidden" name="fstreet2" value="<?echo $_POST["fstreet2"];?>"><br>
+            <? $faddress2 = $_POST['faddress2']; ?>
+            <b>ที่อยู่: </b><span style="color:red"><?echo $_POST["faddress2"];?></span><br>
 
-            <b>จังหวัด: </b><span style="color:red"><?echo $_POST["fprovince2"];?></span>
-            <input type="hidden" name="fprovince2" value="<?echo $_POST["fprovince2"];?>"><br>
+            <? $fstreet2 = $_POST['fstreet2']; ?>
+            <b>ถนน: </b><span style="color:red"><?echo $_POST["fstreet2"];?></span><br>
 
-            <b>รหัสไปรษณีย์: </b><span style="color:red"><?echo $_POST["fzipcode2"];?></span>
-            <input type="hidden" name="fzipcode2" value="<?echo $_POST["fzipcode2"];?>"><br>
+            <? $fprovince2 = $_POST['fprovince2']; ?>
+            <b>จังหวัด: </b><span style="color:red"><?echo $_POST["fprovince2"];?></span><br>
 
-            <b>โทรศัพท์: </b><span style="color:red"><?echo $_POST["ftel2"];?></span>
-            <input type="hidden" name="ftel2" value="<?echo $_POST["ftel2"];?>"><br>
+            <? $fzipcode2 = $_POST['fzipcode2']; ?>
+            <b>รหัสไปรษณีย์: </b><span style="color:red"><?echo $_POST["fzipcode2"];?></span><br>
 
-            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:red"><?echo $_POST["fphone2"];?></span>
-            <input type="hidden" name="fphone2" value="<?echo $_POST["fphone2"];?>"><br>
+            <? $ftel2 = $_POST['ftel2']; ?>
+            <b>โทรศัพท์: </b><span style="color:red"><?echo $_POST["ftel2"];?></span><br>
 
-            <b>โทรสาร: </b><span style="color:red"><?echo $_POST["ffax2"];?></span>
-            <input type="hidden" name="ffax2" value="<?echo $_POST["ffax2"];?>"><br>
+            <? $fphone2 = $_POST['fphone2']; ?>
+            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:red"><?echo $_POST["fphone2"];?></span><br>
+
+            <? $ffax2 = $_POST['ffax2']; ?>
+            <b>โทรสาร: </b><span style="color:red"><?echo $_POST["ffax2"];?></span><br>
+
             <br>
             
-            <b>สถานที่เพาะเลี้ยงอนุรักษ์ ชื่อ: </b><span style="color:red"><?echo $_POST["flocation"];?></span>
-            <input type="hidden" name="flocation" value="<?echo $_POST["flocation"];?>">
+            <? $flocation = $_POST['flocation']; ?>
+            <b>สถานที่เพาะเลี้ยงอนุรักษ์ ชื่อ: </b><span style="color:red"><?echo $_POST["flocation"];?></span><br>
+
             <br>
 
-            <b>ที่อยู่: </b><span style="color:red"><?echo $_POST["faddress3"];?></span>
-            <input type="hidden" name="faddress3" value="<?echo $_POST["faddress3"];?>"><br>
+            <? $faddress3 = $_POST['faddress3']; ?>
+            <b>ที่อยู่: </b><span style="color:red"><?echo $_POST["faddress3"];?></span><br>
 
-            <b>ถนน: </b><span style="color:red"><?echo $_POST["fstreet3"];?></span>
-            <input type="hidden" name="fstreet3" value="<?echo $_POST["fstreet3"];?>"><br>
+            <? $fstreet3 = $_POST['fstreet3']; ?>
+            <b>ถนน: </b><span style="color:red"><?echo $_POST["fstreet3"];?></span><br>
 
-            <b>จังหวัด: </b><span style="color:red"><?echo $_POST["fprovince3"];?></span>
-            <input type="hidden" name="fprovince3" value="<?echo $_POST["fprovince3"];?>"><br>
+            <? $fprovince3 = $_POST['fprovince3']; ?>
+            <b>จังหวัด: </b><span style="color:red"><?echo $_POST["fprovince3"];?></span><br>
 
-            <b>รหัสไปรษณีย์: </b><span style="color:red"><?echo $_POST["fzipcode3"];?></span>
-            <input type="hidden" name="fzipcode3" value="<?echo $_POST["fzipcode3"];?>"><br>
+            <? $fzipcode3 = $_POST['fzipcode3']; ?>
+            <b>รหัสไปรษณีย์: </b><span style="color:red"><?echo $_POST["fzipcode3"];?></span><br>
+
             <br>
-            <b>โทรศัพท์: </b><span style="color:red"><?echo $_POST["ftel3"];?></span>
-            <input type="hidden" name="ftel3" value="<?echo $_POST["ftel3"];?>"><br>
+            <? $ftel3 = $_POST['ftel3']; ?>
+            <b>โทรศัพท์: </b><span style="color:red"><?echo $_POST["ftel3"];?></span><br>
 
-            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:red"><?echo $_POST["fphone3"];?></span>
-            <input type="hidden" name="fphone3" value="<?echo $_POST["fphone3"];?>"><br>
+            <? $fphone3 = $_POST['fphone3']; ?>
+            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:red"><?echo $_POST["fphone3"];?></span><br>
 
-            <b>โทรสาร: </b><span style="color:red"><?echo $_POST["ffax3"];?></span>
-            <input type="hidden" name="ffax3" value="<?echo $_POST["ffax3"];?>"><br>
+            <? $ffax3 = $_POST['ffax3']; ?>
+            <b>โทรสาร: </b><span style="color:red"><?echo $_POST["ffax3"];?></span><br>
+
             <br>
             <br>
 
-            <b>ชื่อพืช: </b><span style="color:red"><?echo $_POST["plantname"];?></span>
-            <input type="hidden" name="plantname" value="<?echo $_POST["plantname"];?>"><br>
+            <? $plantname = $_POST['plantname']; ?>
+            <b>ชื่อพืช: </b><span style="color:red"><?echo $_POST["plantname"];?></span><br>
 
-            <b>ชื่อวิทยาศาสตร์: </b><span style="color:red"><?echo $_POST["sname"];?></span>
-            <input type="hidden" name="sname" value="<?echo $_POST["sname"];?>"><br>
+            <? $sname = $_POST['sname']; ?>
+            <b>ชื่อวิทยาศาสตร์: </b><span style="color:red"><?echo $_POST["sname"];?></span><br>
 
-            <b>จำนวน พ่อ-แม่ พันธุ์: </b><span style="color:red"><?echo $_POST["numberbreed"];?></span>
-            <input type="hidden" name="numberbreed" value="<?echo $_POST["numberbreed"];?>"><br>
+            <? $numberbreed = $_POST['numberbreed']; ?>
+            <b>จำนวน พ่อ-แม่ พันธุ์: </b><span style="color:red"><?echo $_POST["numberbreed"];?></span><br>
 
-            <b>จำนวนเพื่อการค้า: </b><span style="color:red"><?echo $_POST["numbercom"];?></span>
-            <input type="hidden" name="numbercom" value="<?echo $_POST["numbercom"];?>"><br>
+            <? $numbercom = $_POST['numbercom']; ?>
+            <b>จำนวนเพื่อการค้า: </b><span style="color:red"><?echo $_POST["numbercom"];?></span><br>
 
-            <b>แหล่งที่มา(ที่ถูกต้องตามกฎหมาย): </b><span style="color:red"><?echo $_POST["source"];?></span>
-            <input type="hidden" name="source" value="<?echo $_POST["source"];?>"><br>
+            <? $source = $_POST['source']; ?>
+            <b>แหล่งที่มา(ที่ถูกต้องตามกฎหมาย): </b><span style="color:red"><?echo $_POST["source"];?></span><br>
 
-            <b>วิธีการขยายพันธุ์เทียม: </b><span style="color:red"><?echo $_POST["ab"];?></span>
-            <input type="hidden" name="ab" value="<?echo $_POST["ab"];?>">
+            <? $ab = $_POST['ab']; ?>
+            <b>วิธีการขยายพันธุ์เทียม: </b><span style="color:red"><?echo $_POST["ab"];?></span><br>
+
             <br>
             <br>
             <br>
@@ -219,39 +229,96 @@
             <br>
             <br>
             <br>
+
+
+            <input type="hidden" name="fname" value="<?echo $fname;?>">
+            <input type="hidden" name="fbd" value="<?echo $fbd;?>">
+            <input type="hidden" name="fnation" value="<?echo $fnation;?>">
+            <input type="hidden" name="fpassport" value="<?echo $fpassport;?>">
+            <input type="hidden" name="fissue" value="<?echo $fissue;?>">
+            <input type="hidden" name="faddress" value="<?echo $faddress;?>">
+            <input type="hidden" name="fstreet" value="<?echo $fstreet;?>">
+            <input type="hidden" name="fprovince" value="<?echo $fprovince;?>">
+            <input type="hidden" name="fzipcode" value="<?echo $fzipcode;?>">
+            <input type="hidden" name="ftel" value="<?echo $ftel;?>">
+            <input type="hidden" name="fphone" value="<?echo $fphone;?>">
+            <input type="hidden" name="ffax" value="<?echo $ffax;?>">
+            <input type="hidden" name="fmail" value="<?echo $fmail;?>">
+
+            <input type="hidden" name="fname2" value="<?echo $fname2;?>">
+            <input type="hidden" name="fowner" value="<?echo $fowner;?>">
+            <input type="hidden" name="faddress2" value="<?echo $faddress2;?>">
+            <input type="hidden" name="fstreet2" value="<?echo $fstreet2;?>">
+            <input type="hidden" name="fprovince2" value="<?echo $fprovince2;?>">
+            <input type="hidden" name="fzipcode2" value="<?echo $fzipcode2;?>">
+            <input type="hidden" name="ftel2" value="<?echo $ftel2;?>">
+            <input type="hidden" name="fphone2" value="<?echo $fphone2;?>">
+            <input type="hidden" name="ffax2" value="<?echo $ffax2;?>">
+
+
+
+            <input type="hidden" name="flocation" value="<?echo $flocation;?>">
+            <input type="hidden" name="faddress3" value="<?echo $faddress3;?>">
+            <input type="hidden" name="fstreet3" value="<?echo $fstreet3;?>">
+            <input type="hidden" name="fprovince3" value="<?echo $fprovince3;?>">
+            <input type="hidden" name="fzipcode3" value="<?echo $fzipcode3;?>">
+            <input type="hidden" name="ftel3" value="<?echo $ftel3;?>">
+            <input type="hidden" name="fphone3" value="<?echo $fphone3;?>">
+            <input type="hidden" name="ffax3" value="<?echo $ffax3;?>">
+
+            <input type="hidden" name="plantname" value="<?echo $plantname;?>">
+            <input type="hidden" name="sname" value="<?echo $sname;?>">
+            <input type="hidden" name="numberbreed" value="<?echo $numberbreed;?>">
+            <input type="hidden" name="numbercom" value="<?echo $numbercom;?>">
+            <input type="hidden" name="source" value="<?echo $source;?>">
+            <input type="hidden" name="ab" value="<?echo $ab;?>">
+            
           
             <button type="submit" class="btn btn-large btn-primary">Confirm</button>
             <?php echo form_close(); ?>
 
             <?php echo form_open('pages/form15'); ?>
-            <!-- <input type="hidden" name="fname" value="<?echo $_POST["fname"];?>">
-            <input type="hidden" name="fbd" value="<?echo $_POST["fbd"];?>">
-            <input type="hidden" name="fnation" value="<?echo $_POST["fnation"];?>">
-            <input type="hidden" name="fpassport" value="<?echo $_POST["fpassport"];?>">
-            <input type="hidden" name="fissue" value="<?echo $_POST["fissue"];?>">
-            <input type="hidden" name="faddress" value="<?echo $_POST["faddress"];?>">
-            <input type="hidden" name="fstreet" value="<?echo $_POST["fstreet"];?>">
-            <input type="hidden" name="fstreet2" value="<?echo $_POST["fstreet2"];?>">
-            <input type="hidden" name="fprovince2" value="<?echo $_POST["fprovince2"];?>">
-            <input type="hidden" name="fzipcode2" value="<?echo $_POST["fzipcode2"];?>">
-            <input type="hidden" name="ftel2" value="<?echo $_POST["ftel2"];?>">
-            <input type="hidden" name="fphone2" value="<?echo $_POST["fphone2"];?>">
-            <input type="hidden" name="ffax2" value="<?echo $_POST["ffax2"];?>">
-            <input type="hidden" name="flocation" value="<?echo $_POST["flocation"];?>">
-            <input type="hidden" name="faddress3" value="<?echo $_POST["faddress3"];?>">
-            <input type="hidden" name="fstreet3" value="<?echo $_POST["fstreet3"];?>">
-            <input type="hidden" name="fprovince3" value="<?echo $_POST["fprovince3"];?>">
-            <input type="hidden" name="fzipcode3" value="<?echo $_POST["fzipcode3"];?>">
-            <input type="hidden" name="ftel3" value="<?echo $_POST["ftel3"];?>">
-            <input type="hidden" name="fphone3" value="<?echo $_POST["fphone3"];?>">
-            <input type="hidden" name="ffax3" value="<?echo $_POST["ffax3"];?>">
+            <input type="hidden" name="fname" value="<?echo $fname;?>">
+            <input type="hidden" name="fbd" value="<?echo $fbd;?>">
+            <input type="hidden" name="fnation" value="<?echo $fnation;?>">
+            <input type="hidden" name="fpassport" value="<?echo $fpassport;?>">
+            <input type="hidden" name="fissue" value="<?echo $fissue;?>">
+            <input type="hidden" name="faddress" value="<?echo $faddress;?>">
+            <input type="hidden" name="fstreet" value="<?echo $fstreet;?>">
+            <input type="hidden" name="fprovince" value="<?echo $fprovince;?>">
+            <input type="hidden" name="fzipcode" value="<?echo $fzipcode;?>">
+            <input type="hidden" name="ftel" value="<?echo $ftel;?>">
+            <input type="hidden" name="fphone" value="<?echo $fphone;?>">
+            <input type="hidden" name="ffax" value="<?echo $ffax;?>">
+            <input type="hidden" name="fmail" value="<?echo $fmail;?>">
 
-            <input type="hidden" name="plantname" value="<?echo $_POST["plantname"];?>">
-            <input type="hidden" name="sname" value="<?echo $_POST["sname"];?>">
-            <input type="hidden" name="numberbreed" value="<?echo $_POST["numberbreed"];?>">
-            <input type="hidden" name="numbercom" value="<?echo $_POST["numbercom"];?>">
-            <input type="hidden" name="source" value="<?echo $_POST["source"];?>">
-            <input type="hidden" name="ab" value="<?echo $_POST["ab"];?>"> -->
+            <input type="hidden" name="fname2" value="<?echo $fname2;?>">
+            <input type="hidden" name="fowner" value="<?echo $fowner;?>">
+            <input type="hidden" name="faddress2" value="<?echo $faddress2;?>">
+            <input type="hidden" name="fstreet2" value="<?echo $fstreet2;?>">
+            <input type="hidden" name="fprovince2" value="<?echo $fprovince2;?>">
+            <input type="hidden" name="fzipcode2" value="<?echo $fzipcode2;?>">
+            <input type="hidden" name="ftel2" value="<?echo $ftel2;?>">
+            <input type="hidden" name="fphone2" value="<?echo $fphone2;?>">
+            <input type="hidden" name="ffax2" value="<?echo $ffax2;?>">
+
+
+
+            <input type="hidden" name="flocation" value="<?echo $flocation;?>">
+            <input type="hidden" name="faddress3" value="<?echo $faddress3;?>">
+            <input type="hidden" name="fstreet3" value="<?echo $fstreet3;?>">
+            <input type="hidden" name="fprovince3" value="<?echo $fprovince3;?>">
+            <input type="hidden" name="fzipcode3" value="<?echo $fzipcode3;?>">
+            <input type="hidden" name="ftel3" value="<?echo $ftel3;?>">
+            <input type="hidden" name="fphone3" value="<?echo $fphone3;?>">
+            <input type="hidden" name="ffax3" value="<?echo $ffax3;?>">
+
+            <input type="hidden" name="plantname" value="<?echo $plantname;?>">
+            <input type="hidden" name="sname" value="<?echo $sname;?>">
+            <input type="hidden" name="numberbreed" value="<?echo $numberbreed;?>">
+            <input type="hidden" name="numbercom" value="<?echo $numbercom;?>">
+            <input type="hidden" name="source" value="<?echo $source;?>">
+            <input type="hidden" name="ab" value="<?echo $ab;?>">
 
             <button type="submit" class="btn btn-large">Go Back</button>
             <?php echo form_close(); ?>
