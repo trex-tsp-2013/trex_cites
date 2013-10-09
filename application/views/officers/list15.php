@@ -24,7 +24,6 @@
           padding-right: 5px;
         }
       }
-
     </style>
     <link href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -51,14 +50,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">TREX Corp.</a>
+          <a class="brand" href="../auth">TREX Corp.</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
-              <button onclick="location.href='auth/logout'" class="btn btn-small btn-danger">Sign Out</button>            
+              <button onclick="location.href='../auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
             </p>
+
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li><a href="../">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -66,14 +66,14 @@
         </div>
       </div>
     </div>
-    
+
     <div class="container-fluid">
       <div class="row-fluid">
-        <!-- <div class="span3">
+        <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form & Request</h2></li>
-              <li><a href="pages/form15">การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</a></li>
+              <li class="active"><a href="#">การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</a></li>
               <br>
               <li><a href="#">การยื่นคำขอต่างๆ ที่เกี่ยวข้องกับใบสำคัญการขึ้นทะเบียนสถานที่เพาะเลี้ยง และ บัญชีพืชอนุรักษ์</a></li>
               <br>
@@ -86,56 +86,44 @@
               <br>
               <li><a href="#">การออกหนังสือรับรองการส่งออกพืชลูกผสม</a></li>
             </ul>
-          </div>
+          </div><!--/.well -->
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form Status</h2></li>
               <li><a href="#">คำขอล่าสุด</a></li>
             </ul>
-          </div>
-        </div> -->
-        <div class="span9 offset2">
-          <div class="hero-unit">
-            <h1>Hello, <?echo $username;?>!</h1><br>
-            <p>Welcome to the CITES online document approval</p>
-            <p>ยินดีต้อนรับเข้าสู่ การลงทะเบียน CITES ออนไลน์</p>
-            <p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p>
-          </div>
-          <div class="row-fluid">
-            <div class="well span4">
-              <h4>การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</h4><br>
-              <p><a class="btn btn-success" href="officers/view/form15">Verification »</a></p>
-            </div><!--/span-->
-            <div class="well span4">
-              <h4>การยื่นคำขอต่างๆ ที่เกี่ยวข้องกับใบสำคัญการขึ้นทะเบียนสถานที่เพาะเลี้ยง และ บัญชีพืชอนุรักษ์</h4><br>
-              <p><a class="btn btn-success" href="#">Verification »</a></p>
-            </div><!--/span-->
-            <div class="well span4">
-              <h4>การขออนุญาตนำเข้า และนำเข้าล่วงหน้าพืชอนุรักษ์และซากพืชของพืชอนุรักษ์
-              ตามวงศ์และชนิดที่ระบุในบัญชี</h4><br>
-              <p><a class="btn btn-success" href="#">Verification »</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-            <div class="well span4">
-              <h4>การขอใบอนุญาตส่งออก และส่งออกล่วงหน้าพืชอนุรักษ์หรือซากพืชอนุรักษ์</h4><br>
-              <p><a class="btn btn-success" href="#">Verification »</a></p>
-            </div><!--/span-->
-            <div class="well span4">
-              <h4>การขออนุญาตนำผ่านพืชอนุรักษ์</h4>
-              <br><br>
-              <p><a class="btn btn-success" href="#">Verification »</a></p>
-            </div><!--/span-->
-            <div class="well span4">
-              <h4>การออกหนังสือรับรองการส่งออกพืชลูกผสม</h4>
-              <br><br>
-              <p><a class="btn btn-success" href="#">Verification »</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
+          </div><!--/.well -->
         </div><!--/span-->
+        <div class="span9">
+          <div class="well">
+            <h2>คำขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</h2><br><br>
+            <table>
+              <tr>
+                <th>
+                  ผู้ยื่นคำร้อง
+                </th>
+                <th>
+                  สถานที่เพาะเลี้ยงพืชอนุรักษ์
+                </th>
+              </tr>
+              <?php
+              foreach ($form15 as $form15_item) :
+              ?>
+              <tr>
+                <td>
+                  <?php echo $form15_item['fname'] ?>
+                </td>
+                <td>
+                  <a class="btn" href="../view/form15/<?php echo $form15_item['form15_Id'] ?>"> ดูแบบฟร์อม
+                  </a>
+                </td>
+              </tr>
+            <?php endforeach ?>
+            </table>
+          </div>
+          
       </div><!--/row-->
-
-    
+    </div>
       <hr>
 
       <footer>

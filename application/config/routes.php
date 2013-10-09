@@ -52,7 +52,7 @@ $route['pages/preview15'] ='pages_c/preview15';
 $route['pages/save15'] = 'pages_c/save15';
 $route['pages/about'] = 'pages_c/about';
 $route['officers'] = 'officers_c';
-
-
+$route['officers/view/form15'] = 'officers_c/list15';
+$route['officers/view/form15/(:any)'] = 'officers_c/show15/$1';
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
