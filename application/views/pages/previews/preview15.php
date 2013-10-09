@@ -54,7 +54,7 @@
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
-              <button onclick="location.href='../auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
+              <button onclick="location.href='http://localhost/trex_cites/index.php/auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
             </p>
 
             <ul class="nav">
@@ -90,7 +90,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form Status</h2></li>
-              <li><a href="#">คำขอล่าสุด</a></li>
+              <li><a href="status">คำขอล่าสุด</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -99,6 +99,7 @@
             <h2>คำขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</h2><br>
             
             <?php echo form_open("pages/save15");?>
+
             <div style="color:red"><h1>โปรดตรวจสอบความถูกต้องอีกครั้ง</h1></div>
             <? $fname = $_POST['fname']; ?>
             <b>ข้าพเจ้า: </b><span style="color:red"><?echo $_POST["fname"];?></span><br>
@@ -273,10 +274,14 @@
             <input type="hidden" name="source" value="<?echo $source;?>">
             <input type="hidden" name="ab" value="<?echo $ab;?>">
             
-          
+            <table>
+            <tr>
+            <td>
             <button type="submit" class="btn btn-large btn-primary">Confirm</button>
             <?php echo form_close(); ?>
+            </td>
 
+            <td>
             <?php echo form_open('pages/form15'); ?>
             <input type="hidden" name="fname" value="<?echo $fname;?>">
             <input type="hidden" name="fbd" value="<?echo $fbd;?>">
@@ -320,8 +325,11 @@
             <input type="hidden" name="source" value="<?echo $source;?>">
             <input type="hidden" name="ab" value="<?echo $ab;?>">
 
-            <button type="submit" class="btn btn-large">Go Back</button>
+            <br><button type="submit" class="btn btn-large">Go Back</button>
             <?php echo form_close(); ?>
+            </td>
+            </tr>
+            </table>
           </div>
           
       </div><!--/row-->

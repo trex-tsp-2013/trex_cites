@@ -54,7 +54,7 @@
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
-              <button onclick="location.href='../auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
+              <button onclick="location.href='http://localhost/trex_cites/index.php/auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
             </p>
 
             <ul class="nav">
@@ -90,7 +90,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form Status</h2></li>
-              <li><a href="#">คำขอล่าสุด</a></li>
+              <li><a href="status">คำขอล่าสุด</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -314,9 +314,19 @@
             <br>
             <br>
             <br>
+            <table>
+            <tr>
+              <td>
             <button type="submit" class="btn btn-large btn-primary" >Submit</button>
+            <?php echo form_close(); ?>
+              </td>
+              <td>
+            <?php echo form_open("pages");?><br>
             <button type="cancel" class="btn btn-large">Cancel</button>
             <?php echo form_close(); ?>
+              </td>
+            </tr>
+            <table>
           </div>
           
       </div><!--/row-->

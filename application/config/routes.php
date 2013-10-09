@@ -54,5 +54,9 @@ $route['pages/about'] = 'pages_c/about';
 $route['officers'] = 'officers_c';
 $route['officers/view/form15'] = 'officers_c/list15';
 $route['officers/view/form15/(:any)'] = 'officers_c/show15/$1';
+$route['pages/status'] = 'pages_c/status';
+$route['officers/update']='officers_c/update_stat15';
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

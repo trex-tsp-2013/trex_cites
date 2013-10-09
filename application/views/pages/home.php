@@ -54,7 +54,7 @@
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
-              <button onclick="location.href='auth/logout'" class="btn btn-small btn-danger">Sign Out</button>            
+              <button onclick="location.href='http://localhost/trex_cites/index.php/auth/logout'" class="btn btn-small btn-danger">Sign Out</button>            
             </p>
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -89,7 +89,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form Status</h2></li>
-              <li><a href="#">คำขอล่าสุด</a></li>
+              <li><a href="pages/status">คำขอล่าสุด</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -100,9 +100,10 @@
             <p>ยินดีต้อนรับเข้าสู่ การลงทะเบียน CITES ออนไลน์</p>
             <p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p>
           </div>
+          
           <div class="row-fluid">
             <div class="span4">
-              <h4>การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำวนพืชอนุรักษ์</h4><br>
+              <h4>การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</h4><br>
               <p><a class="btn btn-info" href="#">View details »</a></p>
             </div><!--/span-->
             <div class="span4">
@@ -133,7 +134,6 @@
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
-
       <hr>
 
       <footer>

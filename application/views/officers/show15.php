@@ -54,11 +54,11 @@
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
-              <button onclick="location.href='../auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
+              <button onclick="location.href='http://localhost/trex_cites/index.php/auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
             </p>
 
             <ul class="nav">
-              <li><a href="../auth">Home</a></li>
+              <li><a href="http://localhost/trex_cites/index.php/auth">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -87,17 +87,12 @@
               <li><a href="#">การออกหนังสือรับรองการส่งออกพืชลูกผสม</a></li>
             </ul>
           </div><!--/.well -->
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header"><h2>Form Status</h2></li>
-              <li><a href="#">คำขอล่าสุด</a></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
+        </div>
         <div class="span9">
           <div class="well">
-            <h2>คำขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</h2><br>
-                        <?
+            <h2>ตรวจสอบคำขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์(พ.พ.15)</h2><br>
+              
+              <?
               // check post if it is null value
               if(isset($form15['fname'])) 
                 $fname = $form15['fname'];
@@ -244,111 +239,110 @@
               else 
                 $ab = '';
               ?>
-            
-            <div style="color:red"><h1>โปรดตรวจสอบความถูกต้องอีกครั้ง</h1></div>
-            <b>ข้าพเจ้า: </b><span style="color:red"><?echo $form15["fname"];?></span><br>
-            <b>วันเดือนปีเกิด: </b><span style="color:red"><?echo $form15["fbd"];?></span><br>
-            <b>สัญชาติ: </b><span style="color:red"><?echo $form15["fnation"];?></span><br>
+            <h3><b>เลขที่คำขอ: </b><span style="color:blue"><?echo $form15["form15_Id"];?></span></h3><br>
+            <b>ข้าพเจ้า: </b><span style="color:blue"><?echo $form15["fname"];?></span><br>
+            <b>วันเดือนปีเกิด: </b><span style="color:blue"><?echo $form15["fbd"];?></span><br>
+            <b>สัญชาติ: </b><span style="color:blue"><?echo $form15["fnation"];?></span><br>
             <b>บัตรประจำตัวประชาชน / ใบสำคัญประจำตัวคนต่างด้าว เลขที่: </b>
-            <span style="color:red"><?echo $form15["fpassport"];?></span><br>
-            <b>ออกให้ ณ: </b><span style="color:red"><?echo $form15["fissue"];?></span><br>
+            <span style="color:blue"><?echo $form15["fpassport"];?></span><br>
+            <b>ออกให้ ณ: </b><span style="color:blue"><?echo $form15["fissue"];?></span><br>
 
-            <b>ที่อยู่: </b><span style="color:red"><?echo $form15["faddress"];?></span><br>
+            <b>ที่อยู่: </b><span style="color:blue"><?echo $form15["faddress"];?></span><br>
 
-            <b>ถนน: </b><span style="color:red"><?echo $form15["fstreet"];?></span><br>
+            <b>ถนน: </b><span style="color:blue"><?echo $form15["fstreet"];?></span><br>
 
-            <b>จังหวัด: </b><span style="color:red"><?echo $form15["fprovince"];?></span><br>
+            <b>จังหวัด: </b><span style="color:blue"><?echo $form15["fprovince"];?></span><br>
 
-            <b>รหัสไปรษณีย์: </b><span style="color:red"><?echo $form15["fzipcode"];?></span><br>
+            <b>รหัสไปรษณีย์: </b><span style="color:blue"><?echo $form15["fzipcode"];?></span><br>
 
-            <b>โทรศัพท์: </b><span style="color:red"><?echo $form15["ftel"];?></span><br>
+            <b>โทรศัพท์: </b><span style="color:blue"><?echo $form15["ftel"];?></span><br>
             
-            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:red"><?echo $form15["fphone"];?></span><br>
+            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:blue"><?echo $form15["fphone"];?></span><br>
 
-            <b>โทรสาร: </b><span style="color:red"><?echo $form15["ffax"];?></span><br>
+            <b>โทรสาร: </b><span style="color:blue"><?echo $form15["ffax"];?></span><br>
 
-            <b>อีเลคทรอนิคเมล์ Email: </b><span style="color:red"><?echo $form15["fmail"];?></span><br>
+            <b>อีเลคทรอนิคเมล์ Email: </b><span style="color:blue"><?echo $form15["fmail"];?></span><br>
 
             <br><br>
             <b>มีความประสงค์จะขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</b>
             <br>
             <br>
             <? $fname2 = $form15['fname2']; ?>
-            <b>ในนามของ(กรณีเป็นนิติบุคคล): </b><span style="color:red"><?echo $form15["fname2"];?></span><br>
+            <b>ในนามของ(กรณีเป็นนิติบุคคล): </b><span style="color:blue"><?echo $form15["fname2"];?></span><br>
 
             <? $fowner = $form15['fowner']; ?>
-            <b>โดยมี: </b><span style="color:red"><?echo $form15["fowner"];?></span><br>
+            <b>โดยมี: </b><span style="color:blue"><?echo $form15["fowner"];?></span><br>
 
             <? $faddress2 = $form15['faddress2']; ?>
-            <b>ที่อยู่: </b><span style="color:red"><?echo $form15["faddress2"];?></span><br>
+            <b>ที่อยู่: </b><span style="color:blue"><?echo $form15["faddress2"];?></span><br>
 
             <? $fstreet2 = $form15['fstreet2']; ?>
-            <b>ถนน: </b><span style="color:red"><?echo $form15["fstreet2"];?></span><br>
+            <b>ถนน: </b><span style="color:blue"><?echo $form15["fstreet2"];?></span><br>
 
             <? $fprovince2 = $form15['fprovince2']; ?>
-            <b>จังหวัด: </b><span style="color:red"><?echo $form15["fprovince2"];?></span><br>
+            <b>จังหวัด: </b><span style="color:blue"><?echo $form15["fprovince2"];?></span><br>
 
             <? $fzipcode2 = $form15['fzipcode2']; ?>
-            <b>รหัสไปรษณีย์: </b><span style="color:red"><?echo $form15["fzipcode2"];?></span><br>
+            <b>รหัสไปรษณีย์: </b><span style="color:blue"><?echo $form15["fzipcode2"];?></span><br>
 
             <? $ftel2 = $form15['ftel2']; ?>
-            <b>โทรศัพท์: </b><span style="color:red"><?echo $form15["ftel2"];?></span><br>
+            <b>โทรศัพท์: </b><span style="color:blue"><?echo $form15["ftel2"];?></span><br>
 
             <? $fphone2 = $form15['fphone2']; ?>
-            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:red"><?echo $form15["fphone2"];?></span><br>
+            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:blue"><?echo $form15["fphone2"];?></span><br>
 
             <? $ffax2 = $form15['ffax2']; ?>
-            <b>โทรสาร: </b><span style="color:red"><?echo $form15["ffax2"];?></span><br>
+            <b>โทรสาร: </b><span style="color:blue"><?echo $form15["ffax2"];?></span><br>
 
             <br>
             
             <? $flocation = $form15['flocation']; ?>
-            <b>สถานที่เพาะเลี้ยงอนุรักษ์ ชื่อ: </b><span style="color:red"><?echo $form15["flocation"];?></span><br>
+            <b>สถานที่เพาะเลี้ยงอนุรักษ์ ชื่อ: </b><span style="color:blue"><?echo $form15["flocation"];?></span><br>
 
             <br>
 
             <? $faddress3 = $form15['faddress3']; ?>
-            <b>ที่อยู่: </b><span style="color:red"><?echo $form15["faddress3"];?></span><br>
+            <b>ที่อยู่: </b><span style="color:blue"><?echo $form15["faddress3"];?></span><br>
 
             <? $fstreet3 = $form15['fstreet3']; ?>
-            <b>ถนน: </b><span style="color:red"><?echo $form15["fstreet3"];?></span><br>
+            <b>ถนน: </b><span style="color:blue"><?echo $form15["fstreet3"];?></span><br>
 
             <? $fprovince3 = $form15['fprovince3']; ?>
-            <b>จังหวัด: </b><span style="color:red"><?echo $form15["fprovince3"];?></span><br>
+            <b>จังหวัด: </b><span style="color:blue"><?echo $form15["fprovince3"];?></span><br>
 
             <? $fzipcode3 = $form15['fzipcode3']; ?>
-            <b>รหัสไปรษณีย์: </b><span style="color:red"><?echo $form15["fzipcode3"];?></span><br>
+            <b>รหัสไปรษณีย์: </b><span style="color:blue"><?echo $form15["fzipcode3"];?></span><br>
 
             <br>
             <? $ftel3 = $form15['ftel3']; ?>
-            <b>โทรศัพท์: </b><span style="color:red"><?echo $form15["ftel3"];?></span><br>
+            <b>โทรศัพท์: </b><span style="color:blue"><?echo $form15["ftel3"];?></span><br>
 
             <? $fphone3 = $form15['fphone3']; ?>
-            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:red"><?echo $form15["fphone3"];?></span><br>
+            <b>โทรศัพท์เคลื่อนที่: </b><span style="color:blue"><?echo $form15["fphone3"];?></span><br>
 
             <? $ffax3 = $form15['ffax3']; ?>
-            <b>โทรสาร: </b><span style="color:red"><?echo $form15["ffax3"];?></span><br>
+            <b>โทรสาร: </b><span style="color:blue"><?echo $form15["ffax3"];?></span><br>
 
             <br>
             <br>
 
             <? $plantname = $form15['plantname']; ?>
-            <b>ชื่อพืช: </b><span style="color:red"><?echo $form15["plantname"];?></span><br>
+            <b>ชื่อพืช: </b><span style="color:blue"><?echo $form15["plantname"];?></span><br>
 
             <? $sname = $form15['sname']; ?>
-            <b>ชื่อวิทยาศาสตร์: </b><span style="color:red"><?echo $form15["sname"];?></span><br>
+            <b>ชื่อวิทยาศาสตร์: </b><span style="color:blue"><?echo $form15["sname"];?></span><br>
 
             <? $numberbreed = $form15['numberbreed']; ?>
-            <b>จำนวน พ่อ-แม่ พันธุ์: </b><span style="color:red"><?echo $form15["numberbreed"];?></span><br>
+            <b>จำนวน พ่อ-แม่ พันธุ์: </b><span style="color:blue"><?echo $form15["numberbreed"];?></span><br>
 
             <? $numbercom = $form15['numbercom']; ?>
-            <b>จำนวนเพื่อการค้า: </b><span style="color:red"><?echo $form15["numbercom"];?></span><br>
+            <b>จำนวนเพื่อการค้า: </b><span style="color:blue"><?echo $form15["numbercom"];?></span><br>
 
             <? $source = $form15['source']; ?>
-            <b>แหล่งที่มา(ที่ถูกต้องตามกฎหมาย): </b><span style="color:red"><?echo $form15["source"];?></span><br>
+            <b>แหล่งที่มา(ที่ถูกต้องตามกฎหมาย): </b><span style="color:blue"><?echo $form15["source"];?></span><br>
 
             <? $ab = $form15['ab']; ?>
-            <b>วิธีการขยายพันธุ์เทียม: </b><span style="color:red"><?echo $form15["ab"];?></span><br>
+            <b>วิธีการขยายพันธุ์เทียม: </b><span style="color:blue"><?echo $form15["ab"];?></span><br>
 
             <br>
             <br>
@@ -358,7 +352,29 @@
             <br>
             <br>
             <br>
+            <table>
+            <tr>
+            <td width="30%">
+            <?php echo form_open("officers/update");?>
+              <input type="hidden" name="form15_Id" value="<?echo $form15["form15_Id"];?>">
+              <input type="hidden" name="stat" value="verified">
+              <button type="submit" class="btn btn-large btn-success" >Verified</button>
             <?php echo form_close(); ?>
+            </td>
+            <td width="30%">
+            <?php echo form_open("officers/update");?>
+              <input type="hidden" name="form15_Id" value="<?echo $form15["form15_Id"];?>">
+              <input type="hidden" name="stat" value="denied">
+              <button type="submit" class="btn btn-large btn-danger" >Denied</button>
+            <?php echo form_close(); ?>
+          </td>
+            <td width="30%">
+            <?php echo form_open("auth");?>
+              <button type="submit" class="btn btn-large " >Go Back</button>
+            <?php echo form_close(); ?>
+          </td>
+          </tr>
+          </table>
           </div>
           
       </div><!--/row-->

@@ -54,7 +54,7 @@
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
-              <button onclick="location.href='../auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
+              <button onclick="location.href='http://localhost/trex_cites/index.php/auth/logout'" class="btn btn-small btn-danger">Sign Out</button>
             </p>
 
             <ul class="nav">
@@ -87,31 +87,39 @@
               <li><a href="#">การออกหนังสือรับรองการส่งออกพืชลูกผสม</a></li>
             </ul>
           </div><!--/.well -->
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header"><h2>Form Status</h2></li>
-              <li><a href="#">คำขอล่าสุด</a></li>
-            </ul>
-          </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
           <div class="well">
-            <h2>คำขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์</h2><br><br>
-            <table>
-              <tr>
+            <h2>ตรวจสอบคำขอขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์(พ.พ.15)</h2><br><br>
+            <table class="table table-striped table-bordered">
+              <tr class = "warning">
+                <th>
+                  เลขที่คำขอ
+                </th>
                 <th>
                   ผู้ยื่นคำร้อง
                 </th>
                 <th>
-                  สถานที่เพาะเลี้ยงพืชอนุรักษ์
+                  สถานะ
+                </th>
+                <th>
+                <!-- สถานที่เพาะเลี้ยงพืชอนุรักษ์ -->
                 </th>
               </tr>
               <?php
               foreach ($form15 as $form15_item) :
               ?>
-              <tr>
+              <tr class="info">
+                <td>
+                  <?php echo $form15_item['form15_Id'] ?>
+                </td>
                 <td>
                   <?php echo $form15_item['fname'] ?>
+                </td>
+                <td>
+                  <span style="color:red">
+                  <?php echo $form15_item['status'] ?>
+                </span>
                 </td>
                 <td>
                   <a class="btn" href="../view/form15/<?php echo $form15_item['form15_Id'] ?>"> ดูแบบฟร์อม

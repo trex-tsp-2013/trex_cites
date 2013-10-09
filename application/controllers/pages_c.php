@@ -20,8 +20,20 @@ class Pages_C extends CI_Controller{
 		} else{
 		 	redirect('auth', 'refresh');
 		}
-		
 	}
+
+	public function status(){
+		$user = $this->ion_auth->user()->row();
+		//save username to be data
+		$data['username'] = $user->username;
+		$id['id'] = $user->id;
+
+		$data['checks'] = $this->form_model->get_stat15($id['id']);
+			
+		$this->load->view('pages/status',$data);
+	}
+
+
 
 	public function about()
 	{
@@ -42,9 +54,8 @@ class Pages_C extends CI_Controller{
 			//redirect them to the login page
 		 	redirect('auth', 'refresh');
 		}
-
-		
 	}
+
 	public function preview15()
 	{
 
@@ -59,8 +70,8 @@ class Pages_C extends CI_Controller{
 			//redirect them to the login page
 		 	redirect('auth', 'refresh');
 		}
-		
 	}
+
 	public function save15()
 	{
 
@@ -111,8 +122,6 @@ class Pages_C extends CI_Controller{
 				'ab' => $this->input->post('ab'),
 				);
 
-
-
 				if($this->form_model->save_form15($data15))
 				{
 					redirect('auth', 'refresh');
@@ -129,9 +138,5 @@ class Pages_C extends CI_Controller{
 		}
 		
 	}
-
-
-
-	
 
 }

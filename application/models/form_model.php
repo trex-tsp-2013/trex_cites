@@ -12,7 +12,19 @@ class Form_model extends CI_Model
 		$this->db->insert('form15', $data);
 		return 'true';
 	}
-	
+
+	public function update_stat_form15($id,$data)
+	{
+		$this->db->update('form15', $data,$id);
+		return 'true';
+	}
+
+	public function get_stat15($userId){
+		// $query = $this->db->get('form15');
+		$query = $this->db->get_where('form15', array('userId' => $userId));
+		return $query->result_array();
+	}
+
 	public function get_form15($slug = FALSE){
 		if ($slug === FALSE){
 			$query = $this->db->get('form15');
@@ -21,4 +33,5 @@ class Form_model extends CI_Model
 		$query = $this->db->get_where('form15', array('form15_Id' => $slug));
 		return $query->row_array();
 	}
+
 }

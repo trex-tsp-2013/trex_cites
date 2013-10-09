@@ -71,21 +71,25 @@
 
             <?php echo form_open("auth/login");?>
             <!-- logo -->
-            <img src="<?php echo base_url(); ?>assets/img/TREX_LOGO.png"><br><br>
+            <img src="<?php echo base_url(); ?>assets/img/TREX_LOGO.png"><br><br><br>
             <input type="text" class="input-large" placeholder="Email/Username" name="identity">
             <br> 
             <input type="password" class="input-large" placeholder="Password" name="password">
           
             <p>Remember Me: <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?></p>
-
-            
+            <table>
+            <tr>
+            <td>
             <button class="btn btn-primary" type="submit" style="height:30px; width:95px" > Login </button>
             <?php echo form_close(); ?>
-
+            </td>
+            <td><br>
             <?php echo form_open('auth/create_user'); ?>
               <button class="btn" type="submit" style="height:30px; width:95px">Register</button>
             <?php echo form_close(); ?>
-
+            </td>
+            </tr>
+          </table>
             
 
             <p><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
