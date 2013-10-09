@@ -355,14 +355,14 @@
             <table>
             <tr>
             <td width="30%">
-            <?php echo form_open("officers/update");?>
+            <?php echo form_open("officers/view/update");?>
               <input type="hidden" name="form15_Id" value="<?echo $form15["form15_Id"];?>">
               <input type="hidden" name="stat" value="verified">
               <button type="submit" class="btn btn-large btn-success" >Verified</button>
             <?php echo form_close(); ?>
             </td>
             <td width="30%">
-            <?php echo form_open("officers/update");?>
+            <?php echo form_open("officers/view/update");?>
               <input type="hidden" name="form15_Id" value="<?echo $form15["form15_Id"];?>">
               <input type="hidden" name="stat" value="denied">
               <button type="submit" class="btn btn-large btn-danger" >Denied</button>
