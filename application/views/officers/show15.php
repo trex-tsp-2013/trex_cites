@@ -369,7 +369,7 @@
             <?php echo form_close(); ?>
           </td>
             <td width="30%">
-            <?php echo form_open("auth");?>
+            <?php echo form_open("officers/view/form15");?>
               <button type="submit" class="btn btn-large " >Go Back</button>
             <?php echo form_close(); ?>
           </td>
