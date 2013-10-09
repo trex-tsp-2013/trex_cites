@@ -453,6 +453,21 @@ class Ion_auth
 		return $this->in_group($admin_group, $id);
 	}
 
+
+	//Check officer
+	public function is_officer($id=false)
+	{
+		$this->ion_auth_model->trigger_events('is_admin');
+
+		$admin_group = $this->config->item('officer_group', 'ion_auth');
+
+		return $this->in_group($admin_group, $id);
+	}
+
+
+
+
+
 	/**
 	 * in_group
 	 *

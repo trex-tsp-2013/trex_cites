@@ -51,6 +51,7 @@ $route['pages/form15'] ='pages_c/form15';
 $route['pages/preview15'] ='pages_c/preview15';
 $route['pages/save15'] = 'pages_c/save15';
 $route['pages/about'] = 'pages_c/about';
+$route['officers'] = 'officers_c';
 
 
 /* End of file routes.php */
