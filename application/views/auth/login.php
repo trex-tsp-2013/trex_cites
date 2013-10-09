@@ -54,7 +54,7 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="../pages/about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -70,8 +70,8 @@
             <!--<p><?php echo lang('login_subheading');?></p>-->
 
             <?php echo form_open("auth/login");?>
-            
-            <h1>TREX Corp.</h1><br>
+            <!-- logo -->
+            <img src="<?php echo base_url(); ?>assets/img/TREX_LOGO.png"><br><br>
             <input type="text" class="input-large" placeholder="Email/Username" name="identity">
             <br> 
             <input type="password" class="input-large" placeholder="Password" name="password">

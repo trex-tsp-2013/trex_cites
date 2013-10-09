@@ -24,6 +24,7 @@
           padding-right: 5px;
         }
       }
+
     </style>
     <link href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -58,17 +59,17 @@
             </p>
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="pages/about">About</a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-
+    
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
+        <!-- <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form & Request</h2></li>
@@ -85,15 +86,15 @@
               <br>
               <li><a href="#">การออกหนังสือรับรองการส่งออกพืชลูกผสม</a></li>
             </ul>
-          </div><!--/.well -->
+          </div>
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form Status</h2></li>
               <li><a href="#">คำขอล่าสุด</a></li>
             </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
+          </div>
+        </div> -->
+        <div class="span9 offset2">
           <div class="hero-unit">
             <h1>Hello, <?echo $username;?>!</h1><br>
             <p>Welcome to the CITES online document approval</p>
@@ -101,39 +102,40 @@
             <p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p>
           </div>
           <div class="row-fluid">
-            <div class="span4">
-              <h4>การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำวนพืชอนุรักษ์</h4><br>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
+            <div class="well span4">
+              <h4>การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</h4><br>
+              <p><a class="btn btn-success" href="#">Verification »</a></p>
             </div><!--/span-->
-            <div class="span4">
-              <h4>การยื่นคำขอต่างๆ ที่เกี่ยวข้องกับใบสำคัญการขึ้นทะเบียนสถานที่เพาะเลี้ยง และ บัญชีพืชอนุรักษ์</h4>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
+            <div class="well span4">
+              <h4>การยื่นคำขอต่างๆ ที่เกี่ยวข้องกับใบสำคัญการขึ้นทะเบียนสถานที่เพาะเลี้ยง และ บัญชีพืชอนุรักษ์</h4><br>
+              <p><a class="btn btn-success" href="#">Verification »</a></p>
             </div><!--/span-->
-            <div class="span4">
+            <div class="well span4">
               <h4>การขออนุญาตนำเข้า และนำเข้าล่วงหน้าพืชอนุรักษ์และซากพืชของพืชอนุรักษ์
-              ตามวงศ์และชนิดที่ระบุในบัญชี</h4>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
+              ตามวงศ์และชนิดที่ระบุในบัญชี</h4><br>
+              <p><a class="btn btn-success" href="#">Verification »</a></p>
             </div><!--/span-->
           </div><!--/row-->
           <div class="row-fluid">
-            <div class="span4">
-              <h4>การขอใบอนุญาตส่งออก และส่งออกล่วงหน้าพืชอนุรักษ์หรือซากพืชอนุรักษ์</h4>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
+            <div class="well span4">
+              <h4>การขอใบอนุญาตส่งออก และส่งออกล่วงหน้าพืชอนุรักษ์หรือซากพืชอนุรักษ์</h4><br>
+              <p><a class="btn btn-success" href="#">Verification »</a></p>
             </div><!--/span-->
-            <div class="span4">
+            <div class="well span4">
               <h4>การขออนุญาตนำผ่านพืชอนุรักษ์</h4>
-              <br>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
+              <br><br>
+              <p><a class="btn btn-success" href="#">Verification »</a></p>
             </div><!--/span-->
-            <div class="span4">
+            <div class="well span4">
               <h4>การออกหนังสือรับรองการส่งออกพืชลูกผสม</h4>
-              <br>
-              <p><a class="btn btn-info" href="#">View details »</a></p>
+              <br><br>
+              <p><a class="btn btn-success" href="#">Verification »</a></p>
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
 
+    
       <hr>
 
       <footer>

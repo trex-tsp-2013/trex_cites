@@ -50,11 +50,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="auth">TREX Corp.</a>
+          <a class="brand" href="../auth">TREX Corp.</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="auth">Home</a></li>
-              <li><a href="../pages/about">About</a></li>
+              <li><a href="../auth">Home</a></li>
+              <li class="active"><a href="#">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -62,72 +62,48 @@
       </div>
     </div>
 
-      <div class="container-fluid">
-            <div class="row-fluid">
-                  <div class="span3 offset4">
-                        <div class="well">
-<!-- logo -->
-<img src="<?php echo base_url(); ?>assets/img/TREX_LOGO.png"><br><br>
-<h1><?php echo lang('create_user_heading');?></h1>
-<p><?php echo lang('create_user_subheading');?></p>
-
-<div id="infoMessage" style="color:red"><?php echo $message;?></div>
-
-<?php echo form_open("auth/create_user");?>
-
-      <p>
-            <?php echo lang('create_user_fname_label', 'first_name');?> 
-            <?php echo form_input($first_name);?>
-      </p>
-
-      <p>
-            <?php echo lang('create_user_lname_label', 'first_name');?> 
-            <?php echo form_input($last_name);?>
-      </p>
-
-      <p>
-            <?php echo lang('create_user_company_label', 'company');?> 
-            <?php echo form_input($company);?>
-      </p>
-
-      <p>
-            <?php echo lang('create_user_email_label', 'email');?> 
-            <?php echo form_input($email);?>
-      </p>
-
-      <p>
-            <?php echo lang('create_user_phone_label', 'phone');?> 
-            <?php echo form_input($phone);?>
-      </p>
-
-      <p>
-            <?php echo lang('create_user_password_label', 'password');?> 
-            <?php echo form_input($password);?>
-      </p>
-
-      <p>
-            <?php echo lang('create_user_password_confirm_label', 'password_confirm');?>
-            <?php echo form_input($password_confirm);?>
-      </p>
-
-<p><?php
-      $attributes = array('class' => 'class="btn btn-danger"');
-       echo form_submit('submit', lang('create_user_submit_btn'), $attributes['class']);?></p>
-
-<?php echo form_close();?>
-
-
-                        </div>
-                  </div>
-            </div>
-      </div>
-
+        <div class="span12">
+          <div class="well">
+        
+          <h1>About</h1>
+          <!-- logo -->
+            <img src="<?php echo base_url(); ?>assets/img/TREX_LOGO.png" style="max-width:60%;"><br><br>
+          <div class="offset1">
+            <h3>(CEO) Team Leader</h3>
+                <li><h4>Tanachot Techajarupan 5410547624 </h4></li>
+            <h3>Assistant Team Leader</h3>
+                <li><h4>Suthidetch Thanombooncharoen 5410547667</h4></li>
+            <h3>Planning Manager</h3> 
+                <li><h4>Chuphan Tharacheewin 5410547586</h4></li>
+            <h3>Assistant Planning Manager</h3>
+                <li><h4>Kasintorn Honglawan 5410547578</h4></li>
+            <h3>Development Manager</h3>
+                <li><h4>Nachanok Suktarachan 5410547594</h4></li>
+            <h3>Assistant Development Manager</h3>
+                <li><h4>Nopphadon Wangmethakul 5410547101</h4></li>
+                <li><h4>Nuttapon Phannurat 5410547616</h4></li>
+            <h3>Quality & Process Manager</h3> 
+                <li><h4>Nutnicha Charoenporn 5410547608</h4></li>
+            <h3>Assistant Quality & Process Manager</h3> 
+                <li><h4>Satjarporn Chindalikit 5410547136</h4></li>
+            <h3>Support Manager</h3>
+                <li><h4>Arnan Maipradit 5410546431</h4></li>
+            <h3>Assistant Support Manager</h3>
+                <li><h4>Vanich Chaipattanawanich 5410547659</h4></li>
+                <li><h4>Suphanat Savetapanu 5410547128</h4></li>
+                <br>
+        </div>
+        </div>
+        
       <hr>
+
       <footer>
         <p>© TREX Corp. 2013</p>
       </footer>
+       </div><!-- span12 -->
+    
 
-<!-- Le javascript
+    <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
