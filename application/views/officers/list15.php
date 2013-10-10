@@ -118,9 +118,16 @@
                   <?php echo $form15_item['fname'] ?>
                 </td>
                 <td>
-                  <span style="color:red">
-                  <?php echo $form15_item['status'] ?>
-                </span>
+                    <?if($form15_item['status'] == 'Verified'){
+                      echo '<span style="color:green">'.$form15_item['status'].'</span>';
+                    }
+                    elseif ($form15_item['status'] == 'Denied') {
+                      echo '<span style="color:red">'.$form15_item['status'].'</span>';
+                    }
+                    else{
+                      echo '<span style="color:orange">'.$form15_item['status'].'</span>';
+                    }
+                    ?>
                 </td>
                 <td>
                   <a class="btn" href="../view/form15/<?php echo $form15_item['form15_Id'] ?>"> ดูแบบฟร์อม

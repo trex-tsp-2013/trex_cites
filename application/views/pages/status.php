@@ -116,10 +116,21 @@
                   <?echo $check['fname'];?>
                   </td>
                   <td>
-                  <span style="color:red"><?echo $check['status'];?></span>
+                    <?if($check['status'] == 'Verified'){
+                      echo '<span style="color:green">'.$check['status'].'</span>';
+                    }
+                    elseif ($check['status'] == 'Denied') {
+                      echo '<span style="color:green">'.$check['status'].'</span>';
+                    }
+                    else{
+                      echo '<span style="color:orange">'.$check['status'].'</span>';
+                    }
+                    ?>
                   </td>
                   <td>
+                  <span style="color:red">
                   <?echo $check['comment'];?>
+                  </span>
                   </td>
                   </tr>
               <?}

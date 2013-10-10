@@ -242,6 +242,10 @@
                 $ab = $form15['ab'];
               else 
                 $ab = '';
+              // if(isset($form15['comment'])) 
+              //   $comment = $form15['comment'];
+              // else 
+              //   $comment = '';
               ?>
             <h3><b>เลขที่คำขอ: </b><span style="color:blue"><?echo $form15["form15_Id"];?></span></h3><br>
             <b>ข้าพเจ้า: </b><span style="color:blue"><?echo $form15["fname"];?></span><br>
@@ -359,8 +363,12 @@
             <b>หมายเหตุ</b>
             <br>
             <br>
+            <? $comment = $form15['comment']; ?>
             <?php echo form_open("officers/view/update");?>
-            <textarea rows="5" name="comment"></textarea>
+           <!--  <textarea row="5" name="comment">
+              <?echo $form15["comment"];?>
+            </textarea> -->
+            <input type="text" name="comment" class="input-xxlarge" value="<?echo $form15["comment"];?>">
             <br>
             <br>
             <table>
