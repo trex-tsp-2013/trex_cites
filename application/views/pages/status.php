@@ -120,7 +120,7 @@
                       echo '<span style="color:green">'.$check['status'].'</span>';
                     }
                     elseif ($check['status'] == 'Denied') {
-                      echo '<span style="color:green">'.$check['status'].'</span>';
+                      echo '<span style="color:red">'.$check['status'].'</span>';
                     }
                     else{
                       echo '<span style="color:orange">'.$check['status'].'</span>';
