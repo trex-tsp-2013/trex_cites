@@ -364,7 +364,7 @@
             <br>
             <br>
             <?php echo form_open("officers/view/update");?>
-            <textarea rows="5" name="comment"></textarea>
+            <textarea rows="5" name="comment"><?php echo $form15['comment']; ?></textarea>
             <br>
             <br>
             <table>
