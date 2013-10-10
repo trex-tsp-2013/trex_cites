@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 10, 2013 at 06:59 PM
+-- Generation Time: Oct 10, 2013 at 07:23 PM
 -- Server version: 5.5.29
 -- PHP Version: 5.4.10
 
@@ -60,9 +60,9 @@ CREATE TABLE `form15` (
   `source` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `ab` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `status` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Pending',
-  `comment` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'New document',
+  `comment` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`form15_Id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `form15`
@@ -73,7 +73,8 @@ INSERT INTO `form15` (`form15_Id`, `userId`, `fname`, `fbd`, `fnation`, `fpasspo
 (2, 2, 'Nuttapon', '14/04/1994', 'thai', '1234', 'ku', 'asdsd', 'kbhb', 'jhb', 'kkjhb', 'b', '', 'bhjb', 'khjbhb', 'jkb', 'jhb', 'hjj', 'jh', 'bjh', 'bjbj', 'bh', 'bjhb', 'bjhb', 'jhb', 'jhb', 'jhbj', '', 'bjb', 'jhb', 'jhb', 'jhbj', 'hb', 'bjh', 'bhbjh', 'jhbjk', 'hbjhb', 'jbjk;', 'Denied', 'abcdf'),
 (8, 2, 'Nutaaa', 'ghfgf', 'fgh', 'fgh', 'gh', 'cg', 'ghc', 'ghcg', 'cgc', 'gc', '', '', '', '', '', 'c', 'gc', 'gcg', 'cgc', '', '', '', '', 'g', 'cgc', '', 'cg', 'cg', 'hv', 'hv', '', 'hvjh', 'v', 'hv', '', '', 'Verified', 'abcde'),
 (9, 5, 'ธนโชติ เตชะจารุพันธ์', '2/2/2', 'thai', '1000000000', 'bkk', 'S', 'sathorn', 'bkk', '10', '1', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '00', 'Denied', 'abcd                                    '),
-(12, 5, 'Tanachot', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Verified', '็Hello');
+(12, 5, 'Tanachot', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Denied', 'test'),
+(13, 4, 'test', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Pending', '');
 
 -- --------------------------------------------------------
 
@@ -145,8 +146,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`) VALUES
 (1, '\0\0', 'administrator', '59beecdf7fc966e2f17fd8f65a4a9aeb09d4a3d4', '9462e8eee0', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1381302468, 1, 'Admin', 'istrator', 'ADMIN', '0'),
 (2, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', 'nuttapon phannurat', 'a4e9cc58a617436227ad7a1d6db6c51ca9c934b8', NULL, 'n@gmail.com', NULL, NULL, NULL, NULL, 1381043030, 1381318552, 1, 'Nuttapon', 'Phannurat', 'TREX', '0850199668'),
-(3, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', 'officer officer', '1c93c4d3c13a4521f19bfef3fe07dd6a1ef79a0c', NULL, 'officer@officer.com', NULL, NULL, NULL, NULL, 1381305254, 1381421896, 1, 'Officer', 'Officer', 'TREX', '0850199668'),
-(4, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', 'dsfdsfs dsfsf', '0bb941f07397167bb1aa19d81ec4be5894e178ea', NULL, 'm@g.com', NULL, NULL, NULL, NULL, 1381316764, 1381414176, 1, 'dsfdsfs', 'dsfsf', 'assadasd', 'dsadasd'),
+(3, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', 'officer officer', '1c93c4d3c13a4521f19bfef3fe07dd6a1ef79a0c', NULL, 'officer@officer.com', NULL, NULL, NULL, NULL, 1381305254, 1381424676, 1, 'Officer', 'Officer', 'TREX', '0850199668'),
+(4, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', 'dsfdsfs dsfsf', '0bb941f07397167bb1aa19d81ec4be5894e178ea', NULL, 'm@g.com', NULL, NULL, NULL, NULL, 1381316764, 1381425687, 1, 'dsfdsfs', 'dsfsf', 'assadasd', 'dsadasd'),
 (5, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', 'tanachot techajarupan', 'ff01a5697d560ca487244dc4927a66dcb3007ff0', NULL, 'ttanachot@gmail.com', NULL, NULL, NULL, NULL, 1381330274, 1381423674, 1, 'Tanachot', 'Techajarupan', 'TREX', '1234');
 
 -- --------------------------------------------------------
