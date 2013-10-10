@@ -363,16 +363,8 @@
             <b>หมายเหตุ</b>
             <br>
             <br>
-            <? $comment = $form15['comment']; ?>
             <?php echo form_open("officers/view/update");?>
-<<<<<<< HEAD
             <textarea rows="5" name="comment"><?php echo $form15['comment']; ?></textarea>
-=======
-           <!--  <textarea row="5" name="comment">
-              <?echo $form15["comment"];?>
-            </textarea> -->
-            <input type="text" name="comment" class="input-xxlarge" value="<?echo $form15["comment"];?>">
->>>>>>> 84c451d55861005622953e0cf2e4fff0f4ea0825
             <br>
             <br>
             <table>
