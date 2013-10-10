@@ -24,6 +24,9 @@
           padding-right: 5px;
         }
       }
+      textarea{
+          width:50%;
+      }
     </style>
     <link href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -353,26 +356,25 @@
             <br>
             <br>
             <br>
+            <b>หมายเหตุ</b>
+            <br>
+            <br>
+            <?php echo form_open("officers/view/update");?>
+            <textarea rows="5" name="comment"></textarea>
+            <br>
+            <br>
             <table>
             <tr>
             <td width="30%">
-            <?php echo form_open("officers/view/update");?>
               <input type="hidden" name="form15_Id" value="<?echo $form15["form15_Id"];?>">
-              <input type="hidden" name="stat" value="verified">
-              <button type="submit" class="btn btn-large btn-success" >Verified</button>
-            <?php echo form_close(); ?>
+              <input type="submit" class="btn btn-large btn-success" name="stat" value="Verified">
             </td>
             <td width="30%">
-            <?php echo form_open("officers/view/update");?>
-              <input type="hidden" name="form15_Id" value="<?echo $form15["form15_Id"];?>">
-              <input type="hidden" name="stat" value="denied">
-              <button type="submit" class="btn btn-large btn-danger" >Denied</button>
-            <?php echo form_close(); ?>
+              <input type="submit" class="btn btn-large btn-danger" name="stat" value="Denied">
+            </form>
           </td>
             <td width="30%">
-            <?php echo form_open("officers/view/form15");?>
-              <button type="submit" class="btn btn-large " >Go Back</button>
-            <?php echo form_close(); ?>
+              <a href="../" class="btn btn-large " >Go Back</a>
           </td>
           </tr>
           </table>

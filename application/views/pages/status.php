@@ -102,6 +102,7 @@
             <td width="20%"><h4>เลขที่คำขอ</h4></td>
             <td><h4>ชื่อผู้ยื่นคำร้อง</h4></td> 
             <td><h4>สถานะ</h4></td>
+            <td><h4>หมายเหตุ</h4></td>
             </tr>
 
             <?
@@ -116,6 +117,9 @@
                   </td>
                   <td>
                   <span style="color:red"><?echo $check['status'];?></span>
+                  </td>
+                  <td>
+                  <?echo $check['comment'];?>
                   </td>
                   </tr>
               <?}

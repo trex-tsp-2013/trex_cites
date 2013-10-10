@@ -35,7 +35,8 @@ class Officers_C extends CI_Controller{
 
 		if ($this->ion_auth->logged_in() && $this->ion_auth->is_officer())
 		{
-			$array = array('status' => $this->input->post('stat'));
+			$array = array('status' => $this->input->post('stat'),
+							'comment' => $this->input->post('comment'));
 			$id =array('form15_Id' => $this->input->post('form15_Id'));
 			$this->form_model->update_stat_form15($id,$array);
 			
