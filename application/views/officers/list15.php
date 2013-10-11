@@ -130,7 +130,7 @@
                     ?>
                 </td>
                 <td>
-                  <a class="btn" href="../view/form15/<?php echo $form15_item['form15_Id'] ?>"> ดูแบบฟร์อม
+                  <a class="btn" href="../view/form15/<?php echo $form15_item['form15_Id'] ?>"> ดูแบบฟอร์ม
                   </a>
                 </td>
               </tr>
