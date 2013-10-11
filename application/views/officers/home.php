@@ -105,7 +105,7 @@
           <div class="row-fluid">
             <div class="well span4">
               <h4>การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</h4><br>
-              <p><a class="btn btn-success" href="officers/view/form15">Verification »</a></p>
+              <p><a class="btn btn-success" href="<? echo site_url("officers/view/form15") ?>">Verification »</a></p>
             </div><!--/span-->
             <div class="well span4">
               <h4>การยื่นคำขอต่างๆ ที่เกี่ยวข้องกับใบสำคัญการขึ้นทะเบียนสถานที่เพาะเลี้ยง และ บัญชีพืชอนุรักษ์</h4><br>

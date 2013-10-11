@@ -53,7 +53,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="../auth">TREX Corp.</a>
+          <a class="brand" href="<? echo base_url() ?>">TREX Corp.</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
@@ -62,7 +62,7 @@
             </p>
 
             <ul class="nav">
-              <li><a href="http://localhost/trex_cites/index.php/auth">Home</a></li>
+              <li><a href="<? echo base_url() ?>">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -378,7 +378,7 @@
             </form>
           </td>
             <td width="30%">
-              <a href="../form15" class="btn btn-large " >Go Back</a>
+              <a href="<? echo site_url("officers/view/form15") ?>" class="btn btn-large " >Go Back</a>
           </td>
           </tr>
           </table>

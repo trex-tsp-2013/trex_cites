@@ -72,7 +72,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form & Request</h2></li>
-              <li><a href="pages/form15">การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</a></li>
+              <li><a href="<? echo site_url("pages/form15") ?>">การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</a></li>
               <br>
               <li><a href="#">การยื่นคำขอต่างๆ ที่เกี่ยวข้องกับใบสำคัญการขึ้นทะเบียนสถานที่เพาะเลี้ยง และ บัญชีพืชอนุรักษ์</a></li>
               <br>
@@ -89,7 +89,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form Status</h2></li>
-              <li><a href="pages/status">คำขอล่าสุด</a></li>
+              <li><a href="<? echo site_url("pages/status") ?>">คำขอล่าสุด</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

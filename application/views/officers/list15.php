@@ -130,7 +130,8 @@
                     ?>
                 </td>
                 <td>
-                  <a class="btn" href="../view/form15/<?php echo $form15_item['form15_Id'] ?>"> ดูแบบฟอร์ม
+                  <? $segment = array('officers', 'view', 'form15', $form15_item['form15_Id']); ?>
+                  <a class="btn" href="<? echo site_url($segment) ?>"> ดูแบบฟอร์ม
                   </a>
                 </td>
               </tr>

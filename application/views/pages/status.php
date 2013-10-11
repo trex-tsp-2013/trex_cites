@@ -50,14 +50,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">TREX Corp.</a>
+          <a class="brand" href="<? echo base_url() ?>">TREX Corp.</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link"><?echo $username;?></a>
               <button onclick="location.href='<? echo site_url("auth/logout")?>'" class="btn btn-small btn-danger">Sign Out</button>
             </p>
             <ul class="nav">
-              <li><a href="auth">Home</a></li>
+              <li><a href="<? echo base_url() ?>">Home</a></li>
               <li><a href="pages/about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -72,7 +72,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form & Request</h2></li>
-              <li><a href="form15">การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</a></li>
+              <li><a href="<? echo site_url("pages/form15") ?>">การขึ้นทะเบียนสถานที่เพาะเลี้ยงพืชอนุรักษ์ และ ยื่นบัญชีแสดงจำนวนพืชอนุรักษ์</a></li>
               <br>
               <li><a href="#">การยื่นคำขอต่างๆ ที่เกี่ยวข้องกับใบสำคัญการขึ้นทะเบียนสถานที่เพาะเลี้ยง และ บัญชีพืชอนุรักษ์</a></li>
               <br>
