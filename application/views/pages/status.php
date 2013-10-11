@@ -89,7 +89,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h2>Form Status</h2></li>
-              <li class="active"><a href="#">คำขอล่าสุด</a></li>
+              <li class="active"><a href="<? echo site_url("pages/status") ?>">คำขอล่าสุด</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
